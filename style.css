@@ -1,0 +1,680 @@
+/* Wild card entry feature using * which converts every tag settings according to feature entered */
+*{
+    margin: 0;
+    padding: 0;
+    font-style: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+html{         /*Helps To scroll slowly to move to another topic to see page properly*/
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(images/black.png); */
+    background-repeat: no-repeat;
+    
+    background-size: 1500px;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;  /* so that image and the links will be side by side */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+    /* opacity: ; */
+}
+
+
+
+nav ul li{
+    display: inline-block;  /*It Will be horizontally align all the list items*/
+    list-style: none;
+    margin: 10px 20px;  /*giving spaces between all the link that is 10px from top and bottom and 20px from right and left*/
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/* adding hover in the list of links created  */
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 80px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+.header-text h1{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.card-1 img{
+    border-radius: 10%;
+    width: 250px;
+
+}
+
+.card-1 {
+    width: 40%;
+    position: relative; 
+
+    left: 700px; 
+    top: -300px;
+    /* max-width: 440px; */
+    color: #fff;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1); */
+    /* backdrop-filter: blur(5px); */
+    /*This will blur the backdround of the card*/
+    animation: move 3s infinite;
+
+}
+.card-1:hover{
+    animation: none;
+}
+@keyframes move {
+    from {transform: rotateY(3.142rad);}
+    
+    /* to {transform: rotateX(3.142rad);} */
+    
+}
+
+
+
+/* --------------about------------ */
+#about{
+    padding: 0%;  /*80 for top and bottom and 0 for right and left*/
+    color: #ababab;
+    /* border: 1px solid white; */
+    margin-bottom: 10%;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;  /*width of the column is 35%*/
+    margin-right: 0%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;  
+    animation: move2 5s infinite ;
+}
+/* .about-col-1 img:hover{
+    animation: move2 5s infinite ;
+} */
+
+@keyframes move2 {
+    from {transform: rotateY(45deg);}
+    to {transform: rotateY(-45deg);}
+    
+}
+/* Profile Image Style */
+@-webkit-keyframes pulsate {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 0.0; }
+    50% {
+      opacity: 1.0; }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0.0; } }
+  @keyframes pulsate {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 0.0; }
+    50% {
+      opacity: 1.0; }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0.0; } }
+  
+  .cc-profile-image a {
+    position: relative;
+    
+ }
+  
+  .cc-profile-image a:before {
+    content: "";
+    /* border: 50px solid rgba(55, 140, 63, 0.6); */
+    border: 20px solid #ff004f;
+    border-radius: 10%;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: -65px;
+    
+    -webkit-animation: pulsate 1.6s ease-out;
+            animation: pulsate 1.6s ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    opacity: 0.0;
+    z-index: 99; }
+  
+  .cc-profile-image img {
+    position: relative;
+    border-radius: 10%;
+    height: 400px;
+    width: 400px;
+    bottom: -60px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    transition: all .3s ease-out; }
+  
+  .cc-profile-image a:hover img {
+    transform: scale(1.06, 1.06); }
+  
+  .cc-profile-image a:hover:before {
+    -webkit-animation: none;
+            animation: none; }
+/* end of image effect */
+.about-col-2{
+    /* border: 1px solid white; */
+    margin-left: 0%;
+    flex-basis: 50%;  /*width of the column is 35%*/
+    font-size: xx-large;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links:hover::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+    
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;  /*It will hide all the tab contents*/
+    margin-bottom: 0%;
+}
+
+.tab-contents.active-tab{
+    display: block;
+    margin-bottom: 0%;
+}
+
+/* ------------------skills------------------- */
+/* skills css properties */
+.skills{
+    /* border: 1px solid white; */
+    margin-top: 0%;
+    margin-bottom: 10%;
+    
+    height: 500px;
+    /* box-shadow: 10px 10px 10px 10px grey; */
+    
+}
+.skills-header{
+    text-align: left;
+    margin-left: 10%;
+    /* padding-bottom: 0px; */
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+.skills-list{
+    display: flex;
+}
+.skills-l1{
+    /* border: 1px solid yellow; */
+    width: 40%;
+    margin-left: 5%;
+}
+progress{
+    width: 100%;
+    margin-bottom: 15px;
+    /* background-color: #ff004f; */
+    border-style: groove;
+}
+.line-l1{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-l2{
+    width: 40%;
+    margin-left: 5%;
+}
+.line-l2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ------------------Services----------------- */
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;   /*Hilighting learn more text in anchor tag*/
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #ff004f;
+    transform: translate(-10px);
+}
+
+
+/* --------------portfolio---------------- */
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    text-decoration: none;
+    width: fit-content;
+    border: 2px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #fff;
+    transition: background-color 0.5s;
+
+}
+
+.btn:hover{
+    background-color: #ff004f;
+    border: 2px solid #fff;
+}
+
+/* ---------------contact----------------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);  /*This Will move the icon little bit up will moving the cursor*/
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form{
+    width:100%;
+
+}
+
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer
+}
+
+/* ---------Footer------ */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright:hover{
+    background: #ff004f;
+    font-weight: 400;
+}
+
+.skills-list{
+    display: flex;
+}
+
+.line-l1{
+    display: flex;
+    justify-content: space-between;
+}
+progress{
+    width: 50%;
+    margin-bottom: 20px;
+    /* color: #ff004f; */
+    /* background-color: black; */
+    /* border-style: groove; */
+}
+
+/* -----------css for making website responsive for phone------------ */
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    /* #header{
+        background-image: url(images/deepak_background.png);
+    } */
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+
+    }
+
+    .card-1 img{
+        
+    }
+
+    .cc-profile-image img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 100px;
+        justify-content: center;
+             
+    }
+
+    .cc-profile-image a:before{
+        width: 270px;
+        height: 270px;
+        margin-left: 40px;
+        justify-content: center;
+    }
+
+    
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display:block;
+        margin: 25px;
+    }
+
+    nav ul .fas{              /* Moving the cross on top of the all bars */
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer
+
+    }
+
+    /* About is converting in resposive in media center */
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+
+
+

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This command will make website resposive when the website open in phone-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEPAK-GANGWANI(PORTFOLIO)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome kit link below -->
+    <script src="https://kit.fontawesome.com/13240490a1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ----------------Navbar Logo Image----------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/deepak_logo.png" class="logo" ,alt="pic">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#progress">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <p>Python Developer</p>
+                <h1>Hi, I'm <span>Deepak Gangwani</span> From India</h1>
+
+            </div>
+            <!-- <div class="about-col-1">
+                <img src="images/black.png" alt="pic" srcset="" style="position: relative; width: 500px; left: 800px; top: -250px;">
+            </div> -->
+            <div class="card-1" data-tilt>
+                <img src="images/deepak_background.png" alt="deepak" data-tilt>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="cc-profile-image" data-tilt>
+                    <a href=""><img src="images/black.png" alt="pic" srcset=""></a>
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate about Web Development and Data Science. So to know more about these technologies I'am exploring and learning new technologies daily about these domain.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span></li>
+                            <p>Designing Web/App interface</p>
+                            <li><span>Data Science</span></li>
+                            <p>Data Analysis,EDA And Machine Learning</p>
+                            <li><span>Python Developer</span></li>
+                            <p>Building Backend And API work With Flask Framework</p>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Current</span></li>
+                            <p>Advance Diploma In IT Networking And Cloud Computing From NSTI(Jodhpur)</p>
+                            <li><span>2018-2021</span></li>
+                            <p>Worked In An Online Handicrafts Store</p>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span></li>
+                            <p>Advance Diploma In IT Networking And Cloud Computing From NSTI(Jodhpur)</p>
+                            <li><span>2021</span></li>
+                            <p>B.COM(Honours In Business Finance Economics)</p>
+                            <li><span>2018</span></li>
+                            <p>Senior Secondary In Commerce With Maths</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills progress bars code -->
+    <div class="skills" id="progress">
+        <div>
+            <div class="skills-header">
+                <h2>Professional Skills</h2>
+            </div>
+            <div class="skills-list">
+                <div class="skills-l1">
+                    <div class="line-l1">
+                        <div><label for="file">HTML</label></div>
+                        <div>80%</div>
+                    </div>
+                    <progress id="file" value="80" max="100" style="width: 100%;"></progress>
+                    <div class="line-l1">
+                        <div><label for="file">CSS</label></div>
+                        <div>80%</div>
+                    </div>
+                    <progress id="file" value="80" max="100" style="width: 100%;"></progress>
+                    <div class="line-l1">
+                        <div><label for="file">JAVASCRIPT</label></div>
+                        <div>10%</div>
+                    </div>
+                    <progress id="file" value="10" max="100" style="width: 100%;"></progress>
+                    <div class="line-l1">
+                        <div><label for="file">BOOTSTRAP</label></div>
+                        <div>60%</div>
+                    </div>
+                    <progress id="file" value="60" max="100" style="width: 100%;"></progress>
+                    <div class="line-l1">
+                        <div><label for="file">MS Excel & MS Word</label></div>
+                        <div>70%</div>
+                    </div>
+                    <progress id="file" value="70" max="100" style="width: 100%;"></progress>
+                    <div class="line-l1">
+                        <div><label for="file">REACTJS</label></div>
+                        <div>10%</div>
+                    </div>
+                    <progress id="file" value="10" max="100" style="width: 100%;"></progress>
+                    <div class="line-l1">
+                        <div><label for="file">NODEJS</label></div>
+                        <div>10%</div>
+                    </div>
+                    <progress id="file" value="10" max="100" style="width: 100%;"></progress>
+                    <div class="line-l1">
+                        <div><label for="file">J-QUERY</label></div>
+                        <div>10%</div>
+                    </div>
+                    <progress id="file" value="10" max="100" style="width: 100%;"></progress>
+
+                </div>
+                <div class="skills-l2">
+                    <div class="line-l2">
+                        <div><label for="file">ADVANCE PYTHON(EXCEPTIONAL & FILE HANDLING) </label></div>
+                        <div>80%</div>
+                    </div>
+                    <progress id="file" value="80" max="100" style="width: 100%;"></progress>
+                    <div class="line-l2">
+                        <div><label for="file">DJANGO FRAMEWORK</label></div>
+                        <div>50%</div>
+                    </div>
+                    <progress id="file" value="50" max="100" style="width: 100%;"></progress>
+                    <div class="line-l2">
+                        <div><label for="file">FLASK FRAMEWORK</label></div>
+                        <div>50%</div>
+                    </div>
+                    <progress id="file" value="50" max="100" style="width: 100%;"></progress>
+                    <div class="line-l2">
+                        <div><label for="file">API & EDA</label></div>
+                        <div>50%</div>
+                    </div>
+                    <progress id="file" value="50" max="100" style="width: 100%;"></progress>
+                    <div class="line-l2">
+                        <div><label for="file">PACKAGES:-NUMPY, PANDAS, MATPLOTLIB, SEABORN</label></div>
+                        <div>60%</div>
+                    </div>
+                    <progress id="file" value="60" max="100" style="width: 100%;"></progress>
+                    <div class="line-l2">
+                        <div><label for="file">MONGODB & SQL WORKBENCH</label></div>
+                        <div>40%</div>
+                    </div>
+                    <progress id="file" value="40" max="100" style="width: 100%;"></progress>
+                    <div class="line-l2">
+                        <div><label for="file">C</label></div>
+                        <div>70%</div>
+                    </div>
+                    <progress id="file" value="70" max="100" style="width: 100%;"></progress>
+                    <div class="line-l2">
+                        <div><label for="file">C++</label></div>
+                        <div>60%</div>
+                    </div>
+                    <progress id="file" value="60" max="100" style="width: 100%;"></progress>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------services------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i> <!--using font awesome for logo-->
+                    <h2>Web Design</h2>
+                    <p>I can design web pages and websites with the help HTML,CSS and Javascript</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i> <!--using font awesome for logo-->
+                    <h2>Data Analysis</h2>
+                    <p>I can design Exploratory Data Analysis with the help of python language and it's libraries</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i> <!--using font awesome for logo-->
+                    <h2>Python Development</h2>
+                    <p>Design backend application which make your life easier to solve problem.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio-------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1" srcset="">
+                    <div class="layer">
+                        <h3>Review's Scrapper</h3>
+                        <p>In this project we have used API to fetch data from ecommerce website and get review's of that particular product entered by the user</p>
+                        <a href="https://github.com/Deepak-Gangwani/Reviews-Scrapper"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2" srcset="">
+                    <div class="layer">
+                        <h3>Web Scrapper</h3>
+                        <p>In this project we have used selenium library in python which controls our browser to fetch images of that person which is entered by the on the input and stored in folder with that person file name</p>
+                        <a href="https://github.com/Deepak-Gangwani/Python-Projects/tree/main/ImageScrapper"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3" srcset="">
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+                        <p>In this project we have created a snake game using GUI framework library that is turtle.</p>
+                        <a href="https://github.com/Deepak-Gangwani/Python-Projects/tree/main/snake"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-------------------------Contact------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>deepakgangwani512@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>91+ 7414804515</p>
+                    <div class="social-icons">
+                        <a href="https://www.hackerrank.com/deepakgangwani51" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://github.com/Deepak-Gangwani" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a> -->
+                        <!-- <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a> -->
+                    </div>
+                    <a href="linking_Resume.html" class="btn btn2" target="_blank">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Type Your Message Here"></textarea>
+                        <input type="datetime-local" name="Time" placeholder="Upload Your file" required>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Deepak. Made With <i class="fa-solid fa-heart"></i> By Deepak Gangwani</p>
+        </div>
+    </div>
+
+    <!-- -----------JavaScript Scripting---------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");  /*This will help to display the color underline to the tab*/
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        // -------sidemenu functionality while minimizing the screen------
+        var sd = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sd.style.right = "0";
+        }
+        function closemenu() {
+            sd.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxBaYSYF-FLUd_wr8e9O_pV0w5ZqEZcP3fafVuYSU48PoUIrEcOu-o11OBb_6duodq34g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        // created for giving validation
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- at the end of the body -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    
+
+</body>
+
+</html>
